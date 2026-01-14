@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frequently Asked Questions (FAQ)</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #f7f7f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 16px;
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    /* W3Schools-style accordion */
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 16px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .accordion:hover,
+    .accordion.active {
+      background-color: #ddd;
+    }
+
+    .panel {
+      padding: 0 16px 16px;
+      background-color: white;
+      display: none;
+      border-left: 3px solid #ddd;
+      border-right: 3px solid #ddd;
+      border-bottom: 3px solid #ddd;
+      border-radius: 0 0 6px 6px;
+      margin-top: -8px;
+      margin-bottom: 12px;
+    }
+
+    .panel p {
+      margin-top: 12px;
+    }
+
+    /* Accessibility helpers */
+    .accordion:focus {
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.4);
+    }
+  </style>
+</head>
+<img src="header image GF.png" alt="image" style="width:100%;"></center><br>
+
+<body>
+  <main class="container" role="main">
+    <h1>❓ Frequently Asked Questions (FAQ)</h1>
+    <p class="subtitle">Find quick answers about booking, destinations, payments, changes, and contacting us.</p>
+
+    <button class="accordion" aria-expanded="false" aria-controls="faq1" id="btn-faq1">
+      1. How do I book a travel package?
+    </button>
+    <div class="panel" id="faq1" role="region" aria-labelledby="btn-faq1">
+      <p>
+        You can book a travel package by filling in the booking form on our website. Our staff will contact you to confirm your booking.
+      </p>
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="faq2" id="btn-faq2">
+      2. What destinations do you offer?
+    </button>
+    <div class="panel" id="faq2" role="region" aria-labelledby="btn-faq2">
+      <p>
+        We offer travel packages to Kundasang (Sabah), Cameron Highlands &amp; Kuala Lumpur, Langkawi (Kedah), and Pulau Kapas (Terengganu).
+      </p>
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="faq3" id="btn-faq3">
+      3. What payment methods are accepted?
+    </button>
+    <div class="panel" id="faq3" role="region" aria-labelledby="btn-faq3">
+      <p>
+        We accept online bank transfer, credit card, and e-wallet payments.
+      </p>
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="faq4" id="btn-faq4">
+      4. Can I cancel or change my booking?
+    </button>
+    <div class="panel" id="faq4" role="region" aria-labelledby="btn-faq4">
+      <p>
+        Yes, you may cancel or change your booking at least 5 days before the travel date. Terms and conditions may apply.
+      </p>
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="faq5" id="btn-faq5">
+      5. How can I contact your travel agency?
+    </button>
+    <div class="panel" id="faq5" role="region" aria-labelledby="btn-faq5">
+      <p>
+        You can contact us through the Contact Us page, email, or phone number provided on our website.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    // W3Schools-style accordion behavior
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(btn => {
+      btn.addEventListener("click", function () {
+        const panel = this.nextElementSibling;
+        const isOpen = panel.style.display === "block";
+
+        // Toggle current
+        panel.style.display = isOpen ? "none" : "block";
+        this.classList.toggle("active", !isOpen);
+        this.setAttribute("aria-expanded", String(!isOpen));
+      });
+    });
+  </script>
+</body>
+</html>
+
