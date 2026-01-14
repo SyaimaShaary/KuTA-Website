@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Conditions</title>
+  <style>
+    /* W3Schools-style accordion */
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 16px 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+    }
+    .accordion:hover, .accordion.active {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 20px 16px 20px;
+      display: none;
+      background-color: #f9f9f9;
+      border-left: 3px solid #ddd;
+      border-right: 3px solid #ddd;
+      border-bottom: 3px solid #ddd;
+    }
+    .panel.open {
+      display: block;
+    }
+    /* Content styling */
+    .tcs-section {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+    .tcs-section p {
+      margin: 8px 0;
+    }
+    .tcs-list {
+      margin: 8px 0 0 18px;
+    }
+    .badge {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 8px;
+    }
+    /* Optional container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<img src="header image GF.png" alt="image" style="width:100%;"></center><br>
+
+<body>
+  <main class="container" role="main">
+    <h1>Terms & Conditions</h1>
+    <p class="subtitle">Please read these terms carefully. By using this website, you agree to the following.</p>
+
+    <!-- 1. General -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-general" id="accordion-general">
+      1. General <span class="badge">Required</span>
+    </button>
+    <div id="panel-general" class="panel" role="region" aria-labelledby="accordion-general">
+      <div class="tcs-section">
+        <p>By accessing and using this website, you agree to be bound by these Terms & Conditions. If you do not agree, please refrain from using our services.</p>
+      </div>
+    </div>
+
+    <!-- 2. Booking & Confirmation -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-booking" id="accordion-booking">
+      2. Booking &amp; Confirmation
+    </button>
+    <div id="panel-booking" class="panel" role="region" aria-labelledby="accordion-booking">
+      <div class="tcs-section">
+        <p>All bookings are subject to availability and confirmation by airlines, hotels, and service providers.</p>
+        <p>A booking is only confirmed upon receipt of full payment or deposit as stated in the quotation.</p>
+      </div>
+    </div>
+
+    <!-- 3. Prices & Payments -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-prices" id="accordion-prices">
+      3. Prices &amp; Payments
+    </button>
+    <div id="panel-prices" class="panel" role="region" aria-labelledby="accordion-prices">
+      <div class="tcs-section">
+        <p>Prices quoted are subject to change due to availability, currency fluctuations, fuel surcharges, or supplier policies.</p>
+        <p>All payments must be made within the stipulated time frame.</p>
+      </div>
+    </div>
+
+    <!-- 4. Cancellation & Refund Policy -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-cancel" id="accordion-cancel">
+      4. Cancellation &amp; Refund Policy
+    </button>
+    <div id="panel-cancel" class="panel" role="region" aria-labelledby="accordion-cancel">
+      <div class="tcs-section">
+        <p>Cancellation and refund policies vary depending on airlines, hotels, and service providers.</p>
+        <p>Any cancellation fees or non-refundable charges will be clearly stated in the quotation or invoice.</p>
+      </div>
+    </div>
+
+    <!-- 5. Travel Documents -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-docs" id="accordion-docs">
+      5. Travel Documents
+    </button>
+    <div id="panel-docs" class="panel" role="region" aria-labelledby="accordion-docs">
+      <div class="tcs-section">
+        <p>Clients are responsible for ensuring their passports, visas, and travel documents are valid.</p>
+        <p>The company shall not be held liable for any issues arising from incomplete or invalid documentation.</p>
+      </div>
+    </div>
+
+    <!-- 6. Changes & Amendments -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-changes" id="accordion-changes">
+      6. Changes &amp; Amendments
+    </button>
+    <div id="panel-changes" class="panel" role="region" aria-labelledby="accordion-changes">
+      <div class="tcs-section">
+        <p>Any changes requested after confirmation may incur additional charges and are subject to availability.</p>
+      </div>
+    </div>
+
+    <!-- 7. Liability -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-liability" id="accordion-liability">
+      7. Liability
+    </button>
+    <div id="panel-liability" class="panel" role="region" aria-labelledby="accordion-liability">
+      <div class="tcs-section">
+        <p>The company acts only as an agent for airlines, hotels, and other service providers.</p>
+        <p>We shall not be liable for delays, cancellations, accidents, or circumstances beyond our control.</p>
+      </div>
+    </div>
+
+    <!-- 8. Governing Law -->
+    <button class="accordion" aria-expanded="false" aria-controls="panel-law" id="accordion-law">
+      8. Governing Law
+    </button>
+    <div id="panel-law" class="panel" role="region" aria-labelledby="accordion-law">
+      <div class="tcs-section">
+        <p>These Terms &amp; Conditions are governed by the laws of Malaysia.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // W3Schools-style accordion behavior with basic accessibility
+    (function () {
+      var acc = document.getElementsByClassName("accordion");
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          var expanded = this.getAttribute("aria-expanded") === "true";
+          // Close all others (optional: comment out to allow multiple open)
+          for (var j = 0; j < acc.length; j++) {
+            acc[j].classList.remove("active");
+            acc[j].setAttribute("aria-expanded", "false");
+            var panelId = acc[j].getAttribute("aria-controls");
+            var panelEl = document.getElementById(panelId);
+            if (panelEl) panelEl.classList.remove("open");
+          }
+          // Toggle current
+          this.classList.toggle("active");
+          this.setAttribute("aria-expanded", (!expanded).toString());
+          var panelId = this.getAttribute("aria-controls");
+          var panelEl = document.getElementById(panelId);
+          if (panelEl) panelEl.classList.toggle("open");
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
